@@ -255,3 +255,741 @@ Processing by StaticPagesController#about as HTML
 Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.0ms | Allocations: 5368)
 
 
+Started GET "/" for ::1 at 2020-04-12 01:00:04 +0900
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.3ms | Allocations: 330)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2020-04-12 01:00:06 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 087fee2a6d693ca3d1cb
+Version: webpack 4.42.1
+Time: 9075ms
+Built at: 2020-04-12 1:00:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-dc287964a6d08e954be2.js    567 KiB  application  [emitted] [immutable]  application
+js/application-dc287964a6d08e954be2.js.map    665 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-dc287964a6d08e954be2.js js/application-dc287964a6d08e954be2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 790 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/js/bootstrap.js
+Module not found: Error: Can't resolve 'popper.js' in 'C:\Users\oda\environment\blog\node_modules\bootstrap\dist\js'
+ @ ./node_modules/bootstrap/dist/js/bootstrap.js 9:152-172 9:221-272
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 20311ms (Views: 20285.1ms | ActiveRecord: 0.0ms | Allocations: 31848)
+
+
+[Webpacker] Compilation failed:
+Hash: 087fee2a6d693ca3d1cb
+Version: webpack 4.42.1
+Time: 9244ms
+Built at: 2020-04-12 1:00:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-dc287964a6d08e954be2.js    567 KiB  application  [emitted] [immutable]  application
+js/application-dc287964a6d08e954be2.js.map    665 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-dc287964a6d08e954be2.js js/application-dc287964a6d08e954be2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 790 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/js/bootstrap.js
+Module not found: Error: Can't resolve 'popper.js' in 'C:\Users\oda\environment\blog\node_modules\bootstrap\dist\js'
+ @ ./node_modules/bootstrap/dist/js/bootstrap.js 9:152-172 9:221-272
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 18869ms (Views: 18867.6ms | ActiveRecord: 0.0ms | Allocations: 8365)
+
+
+Started GET "/" for ::1 at 2020-04-12 01:18:18 +0900
+  [1m[35m (10.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.0ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 0.0ms | Allocations: 11117)
+
+
+  
+ActionView::Template::Error (Missing partial layout/_shim with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/oda/environment/blog/app/views"
+  * "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actiontext-6.0.2.2/app/views"
+  * "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.2.2/app/views"
+):
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   <%= render 'layout/shim'%>
+    11:   </head>
+    12:   <body>
+    13:     <%= render 'layout/header'%>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2020-04-12 01:19:59 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 2.7ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 4.1ms | Allocations: 237)
+Completed 200 OK in 141ms (Views: 138.3ms | ActiveRecord: 0.0ms | Allocations: 6230)
+
+
+Started GET "/" for ::1 at 2020-04-12 01:29:42 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 3.1ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 266)
+Completed 200 OK in 131ms (Views: 128.1ms | ActiveRecord: 0.0ms | Allocations: 6212)
+
+
+Started GET "/" for ::1 at 2020-04-12 01:30:54 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 78)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms | Allocations: 4590)
+
+
+Started GET "/" for ::1 at 2020-04-12 01:39:28 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 131.5ms | Allocations: 8289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 3.1ms | Allocations: 83)
+  Rendered layouts/_header.html.erb (Duration: 2.6ms | Allocations: 256)
+Completed 200 OK in 301ms (Views: 298.1ms | ActiveRecord: 0.0ms | Allocations: 14281)
+
+
+Started GET "/about" for ::1 at 2020-04-12 01:39:39 +0900
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.2ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 79)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 0.0ms | Allocations: 4826)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:13:41 +0900
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+Started GET "/" for ::1 at 2020-04-12 15:13:43 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 807.3ms | Allocations: 71391)
+Completed 500 Internal Server Error in 809ms (ActiveRecord: 0.0ms | Allocations: 71848)
+
+
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2399.9ms | Allocations: 139176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 3.5ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 267)
+Completed 200 OK in 2881ms (Views: 2856.9ms | ActiveRecord: 0.0ms | Allocations: 175165)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:13:56 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 779)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 78)
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.0ms | Allocations: 19730)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:28:20 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 78)
+Completed 200 OK in 1006ms (Views: 1004.9ms | ActiveRecord: 0.0ms | Allocations: 78865)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:29:41 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 78)
+Completed 200 OK in 947ms (Views: 946.0ms | ActiveRecord: 0.0ms | Allocations: 96145)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:30:11 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.2ms | Allocations: 778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 78)
+Completed 200 OK in 150ms (Views: 148.7ms | ActiveRecord: 0.0ms | Allocations: 20538)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:35:56 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.1ms | Allocations: 779)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 78)
+Completed 200 OK in 1003ms (Views: 1001.2ms | ActiveRecord: 0.0ms | Allocations: 114453)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:56:31 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.5ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 3.7ms | Allocations: 83)
+  Rendered layouts/_header.html.erb (Duration: 2.2ms | Allocations: 224)
+Completed 200 OK in 183ms (Views: 180.4ms | ActiveRecord: 0.0ms | Allocations: 22114)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:57:58 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.8ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 2.9ms | Allocations: 88)
+  Rendered layouts/_header.html.erb (Duration: 2.4ms | Allocations: 225)
+Completed 200 OK in 179ms (Views: 175.3ms | ActiveRecord: 0.0ms | Allocations: 22115)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:58:17 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 902)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.6ms | Allocations: 83)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 224)
+  Rendered layouts/_footer.html.erb (Duration: 3.1ms | Allocations: 161)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.0ms | Allocations: 22487)
+
+
+Started GET "/" for ::1 at 2020-04-12 15:59:56 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 1040ms (Views: 1039.1ms | ActiveRecord: 0.0ms | Allocations: 115836)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:03:53 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.7ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 140.9ms | Allocations: 19349)
+  Rendered layouts/_shim.html.erb (Duration: 2.6ms | Allocations: 82)
+  Rendered layouts/_header.html.erb (Duration: 2.8ms | Allocations: 224)
+  Rendered layouts/_footer.html.erb (Duration: 2.4ms | Allocations: 154)
+Completed 200 OK in 182ms (Views: 179.8ms | ActiveRecord: 0.0ms | Allocations: 22949)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:18:31 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 143.1ms | Allocations: 19192)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 155ms (Views: 154.1ms | ActiveRecord: 0.0ms | Allocations: 20831)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:19:20 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.1ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 985.3ms | Allocations: 113409)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 995ms (Views: 994.7ms | ActiveRecord: 0.0ms | Allocations: 115042)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:23:16 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.1ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 1013.4ms | Allocations: 114339)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 31)
+Completed 200 OK in 1026ms (Views: 1025.2ms | ActiveRecord: 0.0ms | Allocations: 115964)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:26:31 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.4ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 974.5ms | Allocations: 115021)
+  Rendered layouts/_shim.html.erb (Duration: 2.7ms | Allocations: 87)
+  Rendered layouts/_header.html.erb (Duration: 2.6ms | Allocations: 224)
+  Rendered layouts/_footer.html.erb (Duration: 2.9ms | Allocations: 150)
+Completed 200 OK in 1014ms (Views: 1010.9ms | ActiveRecord: 0.0ms | Allocations: 118621)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:27:42 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 880.5ms | Allocations: 114831)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 891ms (Views: 890.2ms | ActiveRecord: 0.0ms | Allocations: 116461)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:28:01 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.0ms | Allocations: 778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 817.7ms | Allocations: 114835)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 827ms (Views: 825.9ms | ActiveRecord: 0.0ms | Allocations: 116465)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:28:39 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 965.8ms | Allocations: 114368)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 31)
+Completed 200 OK in 976ms (Views: 975.2ms | ActiveRecord: 0.0ms | Allocations: 116002)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:28:48 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 762.4ms | Allocations: 113905)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 772ms (Views: 770.8ms | ActiveRecord: 0.0ms | Allocations: 115539)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:35:38 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.1ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 146.0ms | Allocations: 19230)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 156ms (Views: 155.1ms | ActiveRecord: 0.0ms | Allocations: 20869)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:35:40 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.1ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 79.4ms | Allocations: 19187)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms | Allocations: 20832)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:37:19 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.0ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 153.4ms | Allocations: 19518)
+  Rendered layouts/_shim.html.erb (Duration: 3.7ms | Allocations: 82)
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 224)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 156)
+Completed 200 OK in 200ms (Views: 197.2ms | ActiveRecord: 0.0ms | Allocations: 23116)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:37:32 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 89.8ms | Allocations: 19233)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 99ms (Views: 98.4ms | ActiveRecord: 0.0ms | Allocations: 20873)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:37:33 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 80.0ms | Allocations: 19187)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 89ms (Views: 88.6ms | ActiveRecord: 0.0ms | Allocations: 20820)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:38:53 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.7ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 1025.5ms | Allocations: 112937)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 1035ms (Views: 1034.5ms | ActiveRecord: 0.0ms | Allocations: 114572)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:40:43 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 146.2ms | Allocations: 19230)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 157ms (Views: 155.9ms | ActiveRecord: 0.0ms | Allocations: 20851)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:40:55 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 921.8ms | Allocations: 115303)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 932ms (Views: 930.8ms | ActiveRecord: 0.0ms | Allocations: 116932)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:41:22 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.5ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 984.1ms | Allocations: 114334)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 995ms (Views: 994.0ms | ActiveRecord: 0.0ms | Allocations: 115969)
+
+
+Started GET "/" for ::1 at 2020-04-12 16:41:33 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 88.0ms | Allocations: 19229)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 96ms (Views: 95.7ms | ActiveRecord: 0.0ms | Allocations: 20858)
+
+
+Started GET "/" for ::1 at 2020-04-12 17:04:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.0ms | Allocations: 920)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 142.0ms | Allocations: 19344)
+  Rendered layouts/_shim.html.erb (Duration: 4.0ms | Allocations: 82)
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 224)
+  Rendered layouts/_footer.html.erb (Duration: 2.7ms | Allocations: 150)
+Completed 200 OK in 185ms (Views: 182.0ms | ActiveRecord: 0.0ms | Allocations: 22943)
+
+
+Started GET "/" for ::1 at 2020-04-12 17:05:23 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.7ms | Allocations: 914)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 86.5ms | Allocations: 19344)
+  Rendered layouts/_shim.html.erb (Duration: 0.9ms | Allocations: 82)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 224)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 150)
+Completed 200 OK in 121ms (Views: 117.8ms | ActiveRecord: 0.0ms | Allocations: 22928)
+
+
+Started GET "/" for ::1 at 2020-04-12 17:06:13 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.1ms | Allocations: 920)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 141.3ms | Allocations: 19344)
+  Rendered layouts/_shim.html.erb (Duration: 3.1ms | Allocations: 82)
+  Rendered layouts/_header.html.erb (Duration: 2.7ms | Allocations: 224)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 187)
+Completed 200 OK in 186ms (Views: 182.9ms | ActiveRecord: 0.0ms | Allocations: 22992)
+
+
+Started GET "/contact" for ::1 at 2020-04-12 17:06:16 +0900
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 2.8ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 82.9ms | Allocations: 19293)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 66)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 63)
+Completed 200 OK in 97ms (Views: 94.2ms | ActiveRecord: 0.0ms | Allocations: 20428)
+
+
+Started GET "/contact" for ::1 at 2020-04-12 18:21:22 +0900
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 11.0ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 1143.9ms | Allocations: 113790)
+  Rendered layouts/_shim.html.erb (Duration: 4.1ms | Allocations: 90)
+  Rendered layouts/_header.html.erb (Duration: 6.4ms | Allocations: 275)
+  Rendered layouts/_footer.html.erb (Duration: 3.2ms | Allocations: 175)
+Completed 200 OK in 1237ms (Views: 1211.7ms | ActiveRecord: 0.0ms | Allocations: 118186)
+
+
+Started GET "/" for ::1 at 2020-04-12 18:21:33 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.4ms | Allocations: 932)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 83.7ms | Allocations: 19261)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 92)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 104ms (Views: 101.6ms | ActiveRecord: 0.0ms | Allocations: 21249)
+
+
+Started GET "/" for ::1 at 2020-04-12 18:21:36 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.6ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 83.5ms | Allocations: 19257)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 0.0ms | Allocations: 20958)
+
+
+Started GET "/about" for ::1 at 2020-04-12 18:21:40 +0900
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 3.6ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 88.2ms | Allocations: 19368)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 100ms (Views: 98.1ms | ActiveRecord: 0.0ms | Allocations: 20507)
+
+
+Started GET "/contact" for ::1 at 2020-04-12 18:21:43 +0900
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 83.9ms | Allocations: 19359)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.0ms | Allocations: 20258)
+
+
+Started GET "/" for ::1 at 2020-04-12 18:21:50 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.1ms | Allocations: 789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 92.4ms | Allocations: 19261)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 109ms (Views: 108.4ms | ActiveRecord: 0.0ms | Allocations: 20945)
+
+
+Started GET "/" for ::1 at 2020-04-12 18:39:36 +0900
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.2) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.2) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-12 18:39:43 +0900
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.2) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.2) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (13.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (31.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200412092506)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200412092506"]]
+  [1m[35m (18.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-12 09:40:48.770768"], ["updated_at", "2020-04-12 09:40:48.770768"]]
+  [1m[35m (24.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-04-12 18:43:16 +0900
+  [1m[35m (11.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1391.0ms | Allocations: 101567)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 487.4ms | Allocations: 65140)
+  Rendered layouts/_shim.html.erb (Duration: 6.3ms | Allocations: 90)
+  Rendered layouts/_header.html.erb (Duration: 3.8ms | Allocations: 249)
+  Rendered layouts/_footer.html.erb (Duration: 5.1ms | Allocations: 176)
+Completed 200 OK in 1979ms (Views: 1947.9ms | ActiveRecord: 0.0ms | Allocations: 170765)
+
+
+Started GET "/signup" for ::1 at 2020-04-12 18:43:22 +0900
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 99.0ms | Allocations: 19528)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 94)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 118ms (Views: 114.0ms | ActiveRecord: 0.0ms | Allocations: 21104)
+
+
