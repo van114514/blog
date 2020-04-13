@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
   ) }
 
   describe "User" do
-    it "should be valid" do
+    it "is valid" do
       expect(user).to be_valid
     end
   end
@@ -42,7 +42,7 @@ RSpec.describe User, type: :model do
       end
     end
 
-    it "should reject invalid addresses" do
+    it "rejects invalid addresses" do
       invalid_addresses = %w[user@example,com user_at_foo.org user.name@example.
                            foo@bar_baz.com foo@bar+baz.com]
       invalid_addresses.each do |invalid_address|
@@ -51,7 +51,7 @@ RSpec.describe User, type: :model do
       end
     end
 
-    it "should accept valid addresses" do
+    it "accepts valid addresses" do
       valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org
                          first.last@foo.jp alice+bob@baz.cn]
       valid_addresses.each do |valid_address|
@@ -60,14 +60,14 @@ RSpec.describe User, type: :model do
       end
     end
 
-    it "should be unique" do
+    it "is unique" do
       duplicate_user = user.dup
       duplicate_user.email = user.email.upcase
       user.save
       expect(duplicate_user).to be_invalid
     end
 
-    it "should be saved as lower-case" do
+    it "is saved as lower-case" do
       user.email = "Foo@ExAMPle.CoM"
       user.save!
       expect(user.reload.email).to eq 'foo@example.com'
@@ -76,7 +76,7 @@ RSpec.describe User, type: :model do
   end
 
   describe "password and password_confirmation" do
-    it "should be present (nonblank)" do
+    it "are present (nonblank)" do
       user.password = user.password_confirmation = " "*6
       expect(user).to be_invalid
     end
