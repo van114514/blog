@@ -2191,3 +2191,129 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 100ms (Views: 99.4ms | ActiveRecord: 0.0ms | Allocations: 21515)
 
 
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRememberDigestToUsers (20200417051738)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_digest" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200417051738"]]
+  [1m[35m (19.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-04-17 18:31:58 +0900
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2377.9ms | Allocations: 124146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 269.2ms | Allocations: 66649)
+  Rendered layouts/_shim.html.erb (Duration: 3.8ms | Allocations: 85)
+  Rendered layouts/_header.html.erb (Duration: 5.8ms | Allocations: 492)
+  Rendered layouts/_footer.html.erb (Duration: 3.1ms | Allocations: 176)
+Completed 200 OK in 2732ms (Views: 2709.0ms | ActiveRecord: 0.0ms | Allocations: 195278)
+
+
+Started GET "/login" for ::1 at 2020-04-17 18:32:08 +0900
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 84.2ms | Allocations: 4847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 82.7ms | Allocations: 19631)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 176ms (Views: 174.3ms | ActiveRecord: 0.0ms | Allocations: 26243)
+
+
+Started POST "/login" for ::1 at 2020-04-17 18:32:26 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"0QJHiqca5GSsBaKkx5AFYSPS1QN13jWjvL5Ut+2OsZLjVPTiZjvCXJfyww8O1YNIhTzXaQlRVRL4y5IzJdrAGw==", "session"=>{"email"=>"hotgoo@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hotgoo@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:14:in `remember'
+  [1m[36mUser Update (4.5ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", "$2a$12$XV6ZWSc.WNyX2VQONKrH2uO4A3a/023XYGI.LF0vmuc0wchywo/.6"], ["updated_at", "2020-04-17 09:32:27.120017"], ["id", 2]]
+  ↳ app/models/user.rb:14:in `remember'
+  [1m[35m (23.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:14:in `remember'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 605ms (ActiveRecord: 30.0ms | Allocations: 10086)
+
+
+Started GET "/users/2" for ::1 at 2020-04-17 18:32:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 92.7ms | Allocations: 19636)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 4.0ms | Allocations: 851)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 122ms (Views: 116.0ms | ActiveRecord: 0.8ms | Allocations: 22906)
+
+
+Started GET "/" for ::1 at 2020-04-17 18:32:38 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 90.1ms | Allocations: 19544)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:10:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 258.3ms | Allocations: 841)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 364ms (Views: 362.9ms | ActiveRecord: 0.3ms | Allocations: 22111)
+
+
+Started GET "/users/2" for ::1 at 2020-04-17 18:32:44 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 89.5ms | Allocations: 19629)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.8ms | Allocations: 736)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 105ms (Views: 101.9ms | ActiveRecord: 0.5ms | Allocations: 21966)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-17 18:32:55 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YoGrk+En4Jez3huXi42f3tqo9eFochkRXiAJn+TutbdTcYOSiwXlA0eXT3G8q238LBKZd82m/yC1NageDxUvXA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:18:in `forget'
+  [1m[36mUser Update (4.3ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", nil], ["updated_at", "2020-04-17 09:32:55.347733"], ["id", 2]]
+  ↳ app/models/user.rb:18:in `forget'
+  [1m[35m (19.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:18:in `forget'
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 24.6ms | Allocations: 3018)
+
+
+Started GET "/" for ::1 at 2020-04-17 18:32:55 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 809)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 85.3ms | Allocations: 19526)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 102ms (Views: 100.9ms | ActiveRecord: 0.0ms | Allocations: 21419)
+
+
